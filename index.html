@@ -73,47 +73,13 @@
 
 				// texture
 
-				var manager = new THREE.LoadingManager();
-				manager.onProgress = function ( item, loaded, total ) {
+				var loader = new THREE.OBJMTLLoader();
+				loader.load( 'obj/male02/male02.obj', 'obj/male02/male02_dds.mtl', function ( object ) {
 
-					console.log( item, loaded, total );
-
-				};
-
-				//var texture = new THREE.Texture();
-
-				//var loader = new THREE.ImageLoader( manager );
-				//loader.load( 'textures/UV_Grid_Sm.jpg', function ( image ) {
-
-				//	texture.image = image;
-				//	texture.needsUpdate = true;
-
-				//} );
-
-				// model
-
-				var loader = new THREE.OBJLoader( manager );
-				loader.load( 'testCubes.obj', function ( object ) {
-
-				//	object.traverse( function ( child ) {
-
-				//		if ( child instanceof THREE.Mesh ) {
-
-				//			child.material.map = texture;
-
-				//		}
-
-				//	} );
-
-					object.position.z = + 50;
+					object.position.y = - 80;
 					scene.add( object );
 
 				} );
-                
-                var loader = new THREE.MTLLoader( manager );
-				loader.load( 'testCubes.obj', function ( object ) {
-                    scene.add( object );
-                } );
 
 				//
 
