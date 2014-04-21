@@ -77,6 +77,7 @@
 
                 var material1 = new THREE.MeshNormalMaterial();
                 material1.wireframe = true;
+                material1.color = new color(0xF0F0F0)
                 
 				var loader = new THREE.OBJMTLLoader();
 				loader.load('testCubes.obj', 'testCubes.mtl',  function ( object ) {
@@ -87,13 +88,6 @@
 
 				} );
                 
-				loader.load('testCube.obj', 'testCube.mtl',  function ( object ) {
-
-					object.position.z = + 50;
-                    object.material = material1;
-					scene.add( object );
-
-				} );
                 
 				//
 
