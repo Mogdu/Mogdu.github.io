@@ -75,10 +75,14 @@
 
 				// texture
 
+                var material1 = new TREE.MeshNormalMaterial();
+                material1.wireframe = true;
+                
 				var loader = new THREE.OBJMTLLoader();
 				loader.load('testCubes.obj', 'testCubes.mtl',  function ( object ) {
 
 					object.position.z = + 40;
+                    object.material = TREE.MeshNormalMaterial
 					scene.add( object );
 
 				} );
@@ -86,6 +90,7 @@
 				loader.load('testCube.obj', 'testCube.mtl',  function ( object ) {
 
 					object.position.z = + 50;
+                    object.material = material1;
 					scene.add( object );
 
 				} );
