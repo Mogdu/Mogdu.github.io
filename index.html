@@ -76,12 +76,18 @@
 				// texture
 
 				var loader = new THREE.OBJMTLLoader();
-				loader.load( 'testCubes.obj', 'testCubes.mtl', 'testCube.obj', function ( object ) {
+				loader.load('testCubes.obj', 'testCubes.mtl',  function ( object ) {
 
 					object.position.z = + 10;
 					scene.add( object );
 
 				} );
+                
+                var loader = new THREE.MTLLoader();
+                loader.load( 'testCube.obj', function ( object ) {
+                    object.position.z = + 10;
+					scene.add( object );
+                }
 
 				//
 
