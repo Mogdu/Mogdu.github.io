@@ -74,9 +74,9 @@
 				// texture
 
 				var loader = new THREE.OBJMTLLoader();
-				loader.load( 'obj/male02/male02.obj', 'obj/male02/male02_dds.mtl', function ( object ) {
+				loader.load( 'testCubes.obj', 'testCubes.mtl', function ( object ) {
 
-					object.position.y = - 80;
+					object.position.z = + 50;
 					scene.add( object );
 
 				} );
