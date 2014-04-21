@@ -109,6 +109,11 @@
 					scene.add( object );
 
 				} );
+                
+                var loader = new THREE.MTLLoader( manager );
+				loader.load( 'testCubes.obj', function ( object ) {
+                    scene.add( object );
+                } );
 
 				//
 
