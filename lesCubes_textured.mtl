@@ -1,36 +1,42 @@
 newmtl baked_blinn1SG_pCube4SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 1.00 1.00 1.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Ka baked-blinn1SG-pCube4.jpg
 Ni 1.00
 newmtl baked_blinn1SG_pCube5SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 1.00 1.00 1.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Ka baked-blinn1SG-pCube5.jpg
 Ni 1.00
 newmtl baked_lambert2SG_pCube2SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 1.00 1.00 1.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Ka baked-lambert2SG-pCube2.jpg
 Ni 1.00
 newmtl baked_lambert3SG_pCube3SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 1.00 1.00 1.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Ka baked-lambert3SG-pCube3.jpg
 Ni 1.00
 newmtl baked_lambert3SG_pCube6SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 1.00 1.00 1.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Ka baked-lambert3SG-pCube6.jpg
 Ni 1.00
 newmtl baked_lambert4SG_pCube1SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 1.00 1.00 1.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Ka baked-lambert4SG-pCube1.jpg
 Ni 1.00
