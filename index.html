@@ -134,8 +134,8 @@
 
 			function render() {
 
-				camera.position.x += ( mouseX - camera.position.x ) * .005;
-				camera.position.y += ( - mouseY - camera.position.y ) * .001;
+				camera.position.x += ( (mouseX * 0.5) - camera.position.x ) * .02;
+				camera.position.y += ( -(mouseY * 0.5) - camera.position.y ) * .02;
 
 				camera.lookAt( scene.position );
 
