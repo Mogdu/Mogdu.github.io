@@ -77,10 +77,9 @@
 
                 var material1 = new THREE.MeshNormalMaterial();
                 material1.wireframe = true;
-                material1.color = new THREE.color(0xF0F0F0)
                 
 				var loader = new THREE.OBJMTLLoader();
-				loader.load('testCubes.obj', 'testCubes.mtl',  function ( object ) {
+				loader.load('lesCubes.obj', 'lesCubes.mtl',  function ( object ) {
 
 					object.position.z = + 40;
                     object.material = THREE.MeshNormalMaterial
