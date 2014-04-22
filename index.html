@@ -60,8 +60,8 @@
 				document.body.appendChild( container );
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-				camera.position.x = 40;
-                camera.position.z = 20;
+				camera.position.x = 60;
+                camera.position.z = 40;
                 camera.position.y = 70;
 
 				// scene
@@ -135,7 +135,7 @@
 			function render() {
 
 				camera.position.x += ( mouseX - camera.position.x ) * .05;
-				camera.position.y += ( - mouseY - camera.position.y ) * .05;
+				camera.position.y += ( - mouseY - camera.position.y ) * .03;
 
 				camera.lookAt( scene.position );
 
