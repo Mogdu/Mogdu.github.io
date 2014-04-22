@@ -81,8 +81,9 @@
 				var loader = new THREE.OBJMTLLoader();
 				loader.load('lesCubes_textured.obj', 'lesCubes_textured.mtl',  function ( object ) {
 
-					object.position.z = + 45;
+					object.position.z = + 40;
                     object.position.x = + 40;
+                    object.position.y = + 40;
                     object.material = THREE.MeshNormalMaterial
 					scene.add( object );
 
