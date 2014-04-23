@@ -132,16 +132,23 @@
 
 			}
 
-			function render() {
+            try{
+                function render() {
 
-				camera.position.x += ( (mouseX * 0.5) - camera.position.x ) * .05;
-				camera.position.y += ( -(mouseY * 0.7) - camera.position.y ) * .05;
+                    camera.position.x += ( (mouseX * 0.5) - camera.position.x ) * .05;
+                    camera.position.y += ( -(mouseY * 0.7) - camera.position.y ) * .05;
 
-				camera.lookAt( scene.position );
+                    camera.lookAt( scene.position );
 
-				renderer.render( scene, camera );
+                    renderer.render( scene, camera );
 
-			}
+                }
+            }
+            catch (e){
+                alert("error:\n" + e.name + "\n" + e.message);
+            }
+            
+            
 
 		</script>
 
