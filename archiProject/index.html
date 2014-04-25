@@ -39,14 +39,14 @@
 
 			var container, stats;
 
-			var camera, scene, renderer;
+			var camera, scene, renderer, control;
 
 			var mouseX = 0, mouseY = 0;
 
 			var windowHalfX = window.innerWidth / 2;
 			var windowHalfY = window.innerHeight / 2;
 
-
+            
 			init();
 			animate();
 
@@ -83,6 +83,13 @@
 					scene.add( object );
 
 				} );
+                
+                
+                control = new THREE.TransformControls( camera, renderer.domElement );
+                control.addEventListener( 'change', render );
+                control.setMode( "rotate" );
+                scene.add( control );
+                
                 
                 
 				//
@@ -131,7 +138,9 @@
                 //camera.rotateX += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
                 //camera.rotateY += ( -(mouseX * 0.5) - camera.rotateY ) * 0.05;
                 //camera.rotateOnAxis();
-
+                
+                control.update();
+                
                 renderer.render( scene, camera );
             }
             
