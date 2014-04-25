@@ -26,9 +26,6 @@
 	</head>
 
 	<body>
-		<div id="info">
-		<a href="http://threejs.org" target="_blank">three.js</a> - OBJLoader test
-		</div>
 
 		<script src="three.min.js"></script>
         <script src="OBJLoader.js"></script>
@@ -60,20 +57,20 @@
 				document.body.appendChild( container );
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-				camera.position.x = 60;
-                camera.position.z = 40;
-                camera.position.y = 45;
+				camera.position.x = 8;
+                camera.position.z = 16.5;
+                camera.position.y = 9;
 
 				// scene
 
 				scene = new THREE.Scene();
 
-				var ambient = new THREE.AmbientLight( 0xF0F0F0 );
-				scene.add( ambient );
+				//var ambient = new THREE.AmbientLight( 0xF0F0F0 );
+				//scene.add( ambient );
 
-				var directionalLight = new THREE.DirectionalLight( 0xEEDD99 );
-				directionalLight.position.set( 0, 0.5, 1 );
-				scene.add( directionalLight );
+				//var directionalLight = new THREE.DirectionalLight( 0xEEDD99 );
+				//directionalLight.position.set( 0, 0.5, 1 );
+				//scene.add( directionalLight );
 
 				// texture
 
@@ -81,7 +78,7 @@
                 material1.wireframe = true;
                 
 				var loader = new THREE.OBJMTLLoader();
-				loader.load('lesCubes_textured.obj', 'lesCubes_textured.mtl',  function ( object ) {
+				loader.load('batchBake_firstOfTheName.obj', 'batchBake_firstOfTheName.mtl',  function ( object ) {
 
 					
                     object.material = THREE.MeshNormalMaterial
