@@ -58,8 +58,8 @@
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
 				camera.position.x = 16.5;
-                camera.position.z = 8;
-                camera.position.y = 9;
+                camera.position.z = 17;
+                camera.position.y = 5;
 
 				// scene
 
@@ -126,8 +126,8 @@
                 //camera.position.y += ( -(mouseY * 0.7) - camera.position.y ) * 0.05;
                 //camera.lookAt( scene.position );
                 
-                camera.lookAt.x += mouseX * 0.1;
-                camera.lookAt.y += mouseY * 0.1;
+                camera.lookAt.x += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
+                camera.lookAt.y += ( (mouseX * 0.5) - camera.rotateY ) * 0.05;
 
                 renderer.render( scene, camera );
             }
