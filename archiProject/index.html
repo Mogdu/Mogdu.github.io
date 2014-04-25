@@ -126,8 +126,8 @@
                 //camera.position.y += ( -(mouseY * 0.7) - camera.position.y ) * 0.05;
                 //camera.lookAt( scene.position );
                 
-                camera.lookAt.x += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
-                camera.lookAt.y += ( (mouseX * 0.5) - camera.rotateY ) * 0.05;
+                camera.rotateX += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
+                camera.rotateY += ( (mouseX * 0.5) - camera.rotateY ) * 0.05;
 
                 renderer.render( scene, camera );
             }
