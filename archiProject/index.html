@@ -84,7 +84,7 @@
 
 				} );
                 
-                
+                /*
                 control = new THREE.TransformControls( camera, renderer.domElement );
                 control.addEventListener( 'change', render );
                 control.setMode( "rotate" );
@@ -98,13 +98,14 @@
 				renderer = new THREE.WebGLRenderer({ antialias: true });
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				container.appendChild( renderer.domElement );
-
+                */
+                
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
 				//
 
 				window.addEventListener( 'resize', onWindowResize, false );
-
+                
 			}
 
 			function onWindowResize() {
