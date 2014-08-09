@@ -39,7 +39,7 @@
 
 			var container, stats;
 
-			var camera, scene, renderer, control;
+			var camera, scene, renderer;
 
 			var mouseX = 0, mouseY = 0;
 
@@ -144,7 +144,7 @@
                 //control.update();
                 
                 camera.rotateX += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
-                camera.rotateY += ( -(mouseX * 0.5) - camera.rotateY ) * 0.05;
+                camera.rotateY += ( -(mouseY * 0.5) - camera.rotateY ) * 0.05;
                 
                 renderer.render( scene, camera );
             }
