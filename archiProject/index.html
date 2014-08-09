@@ -126,10 +126,8 @@
 				mouseY = ( event.clientY - windowHalfY ) / 2;
                 //camera.rotateOnAxis( new THREE.Vector3( 0, 1, 0 ), ( event.clientX - windowHalfX ) / 2);
                 //camera.rotateOnAxis( new THREE.Vector3( 1, 0, 0 ).applyQuaternion(camera.quaternion), ( event.clientY - windowHalfY ) / 2);
-                camera.rotateX += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
-                camera.rotateY += ( -(mouseX * 0.5) - camera.rotateY ) * 0.05;
+                
 			}
-
 			//
 
 
@@ -144,6 +142,9 @@
                 //camera.rotateOnAxis();
                 
                 //control.update();
+                
+                camera.rotateX += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
+                camera.rotateY += ( -(mouseX * 0.5) - camera.rotateY ) * 0.05;
                 
                 renderer.render( scene, camera );
             }
