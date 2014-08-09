@@ -145,9 +145,9 @@
                 //camera.rotateOnAxis();
                 
                 //control.update();
-                lastX = mouseX - lastX;
                 
-                camera.rotateOnAxis(Yaxis, lastX);
+                camera.rotateOnAxis(Yaxis, mouseX - lastX);
+                lastX = mouseX;
                 
                 //camera.rotateOnAxis(THREE.Vector3(0, 0, 0 ), mouseY);
                 
