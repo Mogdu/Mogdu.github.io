@@ -96,14 +96,8 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				container.appendChild( renderer.domElement );
 
-				//document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
-                //
-                control = new THREE.TransformControls( camera, renderer.domElement );
-                control.addEventListener( 'change', render );
-                control.setMode( "rotate" );
-                control.attach( camera );
-                scene.add( control );
 				//
 
 				window.addEventListener( 'resize', onWindowResize, false );
@@ -122,14 +116,12 @@
 
 			}
 
-            /*
 			function onDocumentMouseMove( event ) {
 
 				mouseX = ( event.clientX - windowHalfX ) / 2;
 				mouseY = ( event.clientY - windowHalfY ) / 2;
 
 			}
-            */
 
 			//
 
