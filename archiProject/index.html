@@ -42,6 +42,8 @@
 			var camera, scene, renderer;
 
 			var mouseX = 0, mouseY = 0, lastX = 0, lastY = 0;
+            
+            var Yaxis = new THREE.Vector3(0, 1, 0 );
 
 			var windowHalfX = window.innerWidth / 2;
 			var windowHalfY = window.innerHeight / 2;
@@ -144,7 +146,8 @@
                 
                 //control.update();
                 lastX = mouseX - lastX;
-                camera.rotateOnAxis(THREE.Vector3(0, 1, 0 ), lastX);
+                
+                camera.rotateOnAxis(Yaxis, lastX);
                 
                 //camera.rotateOnAxis(THREE.Vector3(0, 0, 0 ), mouseY);
                 
