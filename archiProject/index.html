@@ -144,8 +144,8 @@
                 
                 //control.update();
                 
-                camera.rotateX += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
-                camera.rotateY += ( -(mouseY * 0.5) - camera.rotateY ) * 0.05;
+                camera.rotateX = mouseX;
+                camera.rotateY = mouseY;
                 
                 renderer.render( scene, camera );
             }
@@ -159,7 +159,7 @@
             
             
             function onTheClick() {
-                alert("mouseX="+mouseX+"mouseY"+mouseY+"/n");
+                alert("mouseX="+mouseX+"mouseY"+mouseY);
             }
             
 
