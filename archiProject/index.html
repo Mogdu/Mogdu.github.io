@@ -122,8 +122,8 @@
 
 			function onDocumentMouseMove( event ) {
 
-				//mouseX = ( event.clientX - windowHalfX ) / 2;
-				//mouseY = ( event.clientY - windowHalfY ) / 2;
+				mouseX = ( event.clientX - windowHalfX ) / 2;
+				mouseY = ( event.clientY - windowHalfY ) / 2;
                 //camera.rotateOnAxis( new THREE.Vector3( 0, 1, 0 ), ( event.clientX - windowHalfX ) / 2);
                 //camera.rotateOnAxis( new THREE.Vector3( 1, 0, 0 ).applyQuaternion(camera.quaternion), ( event.clientY - windowHalfY ) / 2);
                 camera.rotateX += ( (mouseX * 0.5) - camera.rotateX ) * 0.05;
